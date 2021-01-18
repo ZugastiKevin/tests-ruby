@@ -40,7 +40,7 @@ end
 
 
 def magic_array(a)
-    a.flatten.map{|x| x * 2}.select{|x|x%3 == 3 }
+    a.flatten.map{|x| x * 2}.select{|x|x%3 != 0 }.uniq.sort
 end
 
 def perform
